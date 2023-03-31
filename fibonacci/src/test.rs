@@ -6,8 +6,8 @@ fn fibonacci(n: usize) -> usize {
 }
 
 #[test]
-fn test() {
+fn test_fibonacci() {
     for n in 0..=40 {
-        assert_eq!(super::fibonacci(n), fibonacci(n));
+        assert_eq!(super::fibonacci(n), fibonacci(n), "n={n}");
     }
 }

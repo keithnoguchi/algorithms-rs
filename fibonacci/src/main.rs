@@ -1,17 +1,14 @@
 //! A fibonacci number
 
-#![forbid(unsafe_code, missing_debug_implementations)]
-
-pub fn fibonacci(n: usize) -> usize {
-    let mut a = 1;
-    let mut b = 1;
-
+fn fibonacci(n: usize) -> usize {
+    let mut x = 1;
+    let mut y = 1;
     for _ in 1..n {
-        let tmp = b;
-        b += a;
-        a = tmp;
+        let tmp = y;
+        y += x;
+        x = tmp;
     }
-    b
+    y
 }
 
 #[cfg(test)]
