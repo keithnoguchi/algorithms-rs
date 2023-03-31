@@ -1,14 +1,16 @@
-//! A fibonacci number
+//! A fibonacci sequence
+//!
+//! https://en.wikipedia.org/wiki/Fibonacci_sequence
 
 fn fibonacci(n: usize) -> usize {
-    let mut x = 1;
+    let mut x = 0;
     let mut y = 1;
-    for _ in 1..n {
+    for _ in 0..n {
         let tmp = y;
         y += x;
         x = tmp;
     }
-    y
+    x
 }
 
 #[cfg(test)]
