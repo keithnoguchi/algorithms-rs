@@ -5,6 +5,7 @@ https://github.com/keithnoguchi/algorithms-rs/actions)
 
 ## Algorithms
 
+- [A factorial sequence](factorial/src/main.rs)
 - [A fibonacci sequence](fibonacci/src/main.rs)
 
 Happy Hacking!
