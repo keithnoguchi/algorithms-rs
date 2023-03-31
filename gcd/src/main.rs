@@ -21,14 +21,8 @@ mod test;
 
 fn main() {
     let mut args = std::env::args().skip(1);
-    let x = args
-        .next()
-        .and_then(|x| x.parse().ok())
-        .unwrap_or(10);
-    let y = args
-        .next()
-        .and_then(|y| y.parse().ok())
-        .unwrap_or(20);
+    let x = args.next().and_then(|x| x.parse().ok()).unwrap_or(10);
+    let y = args.next().and_then(|y| y.parse().ok()).unwrap_or(20);
 
     println!("gcd({x}, {y}) = {}", gcd(x, y));
 }
